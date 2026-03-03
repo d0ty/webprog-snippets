@@ -1,3 +1,27 @@
 h1 {
     font-size: 64px;
 }
+
+footer {
+    display:flex;
+    background-color:grey;
+    justify-content: space-between;
+    color:white;
+    padding: 0 100px;
+}
+
+#logo_section {
+    width: 300px;
+}
+#header {
+    border-bottom: white 2px solid; 
+    font-weight: bold;
+}
+
+.link {
+    border-bottom: white solid 1px;
+}
+
+#sitemap p {
+    text-align: end;
+}
