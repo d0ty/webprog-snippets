@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Forms - ajanlat</title>
+    </head>
+    <body>
+        <div id="data"></div>
+        <form id="form">
+            <!-- hova, mikor, hany hely -->
+            <label for="to">Hova:</label>
+            <input
+                type="text"
+                name="to"
+                placeholder="falu, utca, hazszam"
+            /><br />
+            <label for="when">Mikor:</label>
+            <input
+                type="datetime-local"
+                name="when"
+                placeholder="2026.03.20. 18:00"
+            /><br />
+            <label for="helyek">Hany hely:</label>
+            <input type="number" name="helyek" placeholder="5" /><br />
+            <button type="submit">Submit</button>
+        </form>
+        <script src="form_plotter.js"></script>
+    </body>
+</html>
