@@ -5,8 +5,27 @@
     <body>
         <div id="data"></div>
         <form id="form">
+            <label for="name">Name:</label>
             <input type="text" name="name" placeholder="Name" /><br />
-            <input type="submit" value="Submit" />
+            <label for="password">Password:</label>
+            <input
+                type="password"
+                name="password"
+                placeholder="Password"
+            /><br />
+            <label for="check">Check:</label>
+            <input type="checkbox" name="check" /><br />
+            <label for="submit">Radio:</label>
+            <input type="radio" name="submit" value="opt1" /><br />
+            <label for="submit">Radio 2:</label>
+            <input type="radio" name="submit" value="opt2" /><br />
+            <textarea name="textarea" placeholder="Textarea"></textarea><br />
+            <select name="select">
+                <option value="opt1">Option 1</option>
+                <option value="opt2">Option 2</option>
+                <option value="opt3">Option 3</option>
+            </select>
+            <button type="submit">Submit</button>
         </form>
         <script src="form_plotter.js"></script>
     </body>
