@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Regisztráció</title>
+        <style>
+            body {
+                display:flex;
+                justify-content: center;
+            }
+
+            form {
+                text-align: center;
+                border: 1px black solid;
+                padding: 4px;
+            }
+
+            input {
+                margin-bottom: 4px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="data"></div>
+        <form id="form">
+           
+            <label for="name">Név:</label>
+            <input
+                type="text"
+                name="name"
+            /><br />
+            <label for="group">Csapat:</label>
+            <input
+                type="text"
+                name="group"
+            /><br />
+            <label for="phone">Telefonszám:</label>
+            <input
+                type="tel"
+                name="phone"
+            /><br />
+            <label for="pass">Jelszó:</label>
+            <input
+                type="password"
+                name="pass"
+            /><br />
+            <label for="cpass">Jelszó megerősítése:</label>
+            <input
+                type="password"
+                name="cpass"
+            /><br />
+            <button type="submit">Submit</button>
+        </form>
+        <script src="form_plotter.js"></script>
+    </body>
+</html>
