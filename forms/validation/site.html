@@ -4,11 +4,11 @@
     </head>
     <body>
         <div id="data"></div>
-        <form id="form">
+        <form id="form" onsubmit="return handleSubmit(event);">
             <label for="phone">Telefonszám:</label>
             <input type="tel" name="phone" /><br />
             <button type="submit">Submit</button>
         </form>
-        <script src="form_plotter.js"></script>
+        <script src="validation.js"></script>
     </body>
 </html>

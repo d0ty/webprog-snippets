@@ -19,7 +19,23 @@ function clear() {
 
 function handleSubmit(event) {
   event.preventDefault();
-  const formData = new FormData(this);
-
+  const formData = new FormData(document.getElementById("form"));
+  clear();
+  printText("Hello")
   // validation logic
+  const phone = formData.get("phone");
+  printText(phone);
+
+  if(!phone.startsWith("+36")) {
+      print_error("+36-tal kell kezdődnie")
+      return false
+  }
+
+  if(phone.length != 12) {
+    print_error("Érvénytelen szám")
+    return false
+  }
+
+
+  return false;
 }
